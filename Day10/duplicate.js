@@ -1,0 +1,11 @@
+Arr1=[2,3,4,7]
+Arr2=[3,5,7,9,10]
+arr3=[]
+for(i=0;i<Arr1.length;i++){
+    for(j=0;j<Arr2.length;j++){
+        if(Arr1[i]==Arr2[j]){
+            arr3.push(Arr1[i])
+        }
+    }
+}
+console.log(arr3)

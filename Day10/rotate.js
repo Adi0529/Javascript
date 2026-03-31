@@ -1,0 +1,12 @@
+arr=[1,2,3,4,5]
+newarr=[]
+k=3
+for(i=0;i<arr.length;i++){
+    temp=i+k
+    if(temp>=arr.length)
+    {
+        temp=temp-arr.length
+    }
+    newarr[temp]=arr[i]
+}
+console.log(newarr)

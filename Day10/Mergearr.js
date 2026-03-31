@@ -1,0 +1,21 @@
+Arr1=[2,3,4,7]
+Arr2=[3,5,7,9,10]
+function mergearr(Arr1,Arr2){
+    arr3=[]
+    for(i=0;i<Arr1.length;i++){
+        arr3.push(Arr1[i])
+    }
+    for(i=0;i<Arr2.length;i++){
+        arr3.push(Arr2[i])
+    }
+    for(i=0;i<arr3.length;i++){
+        for(j=i+1;j<arr3.length;j++){
+            if(arr3[i]==arr3[j]){
+                arr3.splice(j,1)
+                j--
+            }
+        }
+    }
+}
+arr3=mergearr(Arr1,Arr2)
+console.log(arr3)
